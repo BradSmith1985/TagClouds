@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 using TagClouds;
 
 namespace Demo {
@@ -16,46 +17,36 @@ namespace Demo {
 		List<TagItem> availableTags;
 		TagCloud tagCloud;
 		Size oldClientSize;
+		StringBuilder stats;
+		Random rnd;
 
 		public TagDemoForm() {
 			tagCloud = new TagCloud();
 			tagCloud.FontFamily = "Cambria";
+
+			rnd = new Random();
+			stats = new StringBuilder();
 
 			InitializeComponent();
 
 			DoubleBuffered = true;
 			canvas.Paint += Canvas_Paint;
 
+			InitTags();
+		}
+
+		private void InitTags() {
 			availableTags = new List<TagItem>();
 
-			availableTags.Add(new TagItem("orange", 105));
-			availableTags.Add(new TagItem("black", 34));
-			availableTags.Add(new TagItem("magenta", 12));
-			availableTags.Add(new TagItem("blue", 2));
-			availableTags.Add(new TagItem("purple", 3));
-			availableTags.Add(new TagItem("green", 16));
-			availableTags.Add(new TagItem("white", 34));
-			availableTags.Add(new TagItem("silver", 78));
-			availableTags.Add(new TagItem("gold", 63));
-			availableTags.Add(new TagItem("yellow", 23));
-			availableTags.Add(new TagItem("crimson", 1));
-			availableTags.Add(new TagItem("violet", 2));
-			availableTags.Add(new TagItem("indigo", 7));
-			availableTags.Add(new TagItem("cyan", 20));
-			availableTags.Add(new TagItem("red", 9));
-			availableTags.Add(new TagItem("brown", 6));
-			availableTags.Add(new TagItem("beige", 18));
-			availableTags.Add(new TagItem("pink", 45));
-			availableTags.Add(new TagItem("grey", 30));
-			availableTags.Add(new TagItem("maroon", 41));
-			availableTags.Add(new TagItem("peach", 22));
-			availableTags.Add(new TagItem("turquoise", 1));
-			availableTags.Add(new TagItem("charcoal", 1));
-			availableTags.Add(new TagItem("navy", 1));
-			availableTags.Add(new TagItem("aqua", 87));
-			availableTags.Add(new TagItem("lime", 3));
+			using (StreamReader sr = new StreamReader("wikipedia-list-of-colors.txt")) {
+				while (!sr.EndOfStream) {
+					string tag = sr.ReadLine().Trim().ToLower().Replace(' ', '-');
+					availableTags.Add(new TagItem(tag, (int)Math.Pow(rnd.Next(1, 128), 3)));
+				}
+			}
 
-			nudTags.Maximum = nudTags.Value = availableTags.Count;
+			nudTags.Maximum = availableTags.Count;
+			nudTags.Value = 64;
 		}
 
 		private void Canvas_Paint(object sender, PaintEventArgs e) {
@@ -89,13 +80,17 @@ namespace Demo {
 
 		private void ApplySettings() {
 			tagCloud.Items.Clear();
-			foreach (var item in availableTags.Take((int)nudTags.Value)) {
+			foreach (var item in availableTags.Shuffle(rnd).Take((int)nudTags.Value)) {
 				tagCloud.Items.Add(item);
 			}
 
 			tagCloud.FontSizeGradient = (float)nudVariation.Value;
 			if (ClientSize.Height != 0) tagCloud.PreferredAspectRatio = (float)ClientSize.Width / (float)ClientSize.Height;
 			tagCloud.Arrange();
+
+			stats.AppendFormat("{0}\t{1}", nudTags.Value, tagCloud.CycleCount);
+			stats.AppendLine();
+
 			txtCycles.Text = tagCloud.CycleCount.ToString();
 			canvas.Invalidate();
 		}
@@ -106,6 +101,20 @@ namespace Demo {
 
 		private void nudTags_ValueChanged(object sender, EventArgs e) {
 			ApplySettings();
+		}
+
+		private void btnStats_Click(object sender, EventArgs e) {
+			Clipboard.SetText(stats.ToString());
+			System.Media.SystemSounds.Beep.Play();
+		}
+
+		private async void btnTest_Click(object sender, EventArgs e) {
+			// reset stats
+			stats.Remove(0, stats.Length);
+			for (int i = 256; i >= 1; i--) {
+				await Task.Delay(10);
+				nudTags.Value = i;
+			}
 		}
 	}
 }

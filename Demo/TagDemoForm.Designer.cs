@@ -30,6 +30,8 @@
 			this.txtCycles = new System.Windows.Forms.TextBox();
 			this.nudTags = new System.Windows.Forms.NumericUpDown();
 			this.label3 = new System.Windows.Forms.Label();
+			this.btnStats = new System.Windows.Forms.Button();
+			this.btnTest = new System.Windows.Forms.Button();
 			((System.ComponentModel.ISupportInitialize)(this.nudVariation)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.nudTags)).BeginInit();
 			this.SuspendLayout();
@@ -56,10 +58,10 @@
 			this.nudVariation.Size = new System.Drawing.Size(50, 20);
 			this.nudVariation.TabIndex = 1;
 			this.nudVariation.Value = new decimal(new int[] {
-            4,
+            25,
             0,
             0,
-            0});
+            65536});
 			this.nudVariation.ValueChanged += new System.EventHandler(this.nudVariation_ValueChanged);
 			// 
 			// canvas
@@ -69,7 +71,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
 			this.canvas.Location = new System.Drawing.Point(15, 38);
 			this.canvas.Name = "canvas";
-			this.canvas.Size = new System.Drawing.Size(597, 391);
+			this.canvas.Size = new System.Drawing.Size(597, 551);
 			this.canvas.TabIndex = 2;
 			// 
 			// label2
@@ -86,7 +88,7 @@
 			this.txtCycles.Location = new System.Drawing.Point(384, 11);
 			this.txtCycles.Name = "txtCycles";
 			this.txtCycles.ReadOnly = true;
-			this.txtCycles.Size = new System.Drawing.Size(50, 20);
+			this.txtCycles.Size = new System.Drawing.Size(75, 20);
 			this.txtCycles.TabIndex = 4;
 			// 
 			// nudTags
@@ -116,11 +118,33 @@
 			this.label3.TabIndex = 5;
 			this.label3.Text = "Number of Tags:";
 			// 
+			// btnStats
+			// 
+			this.btnStats.Location = new System.Drawing.Point(544, 10);
+			this.btnStats.Name = "btnStats";
+			this.btnStats.Size = new System.Drawing.Size(68, 21);
+			this.btnStats.TabIndex = 7;
+			this.btnStats.Text = "Copy stats";
+			this.btnStats.UseVisualStyleBackColor = true;
+			this.btnStats.Click += new System.EventHandler(this.btnStats_Click);
+			// 
+			// btnTest
+			// 
+			this.btnTest.Location = new System.Drawing.Point(465, 10);
+			this.btnTest.Name = "btnTest";
+			this.btnTest.Size = new System.Drawing.Size(76, 21);
+			this.btnTest.TabIndex = 8;
+			this.btnTest.Text = "O(n^2) test";
+			this.btnTest.UseVisualStyleBackColor = true;
+			this.btnTest.Click += new System.EventHandler(this.btnTest_Click);
+			// 
 			// TagDemoForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(624, 441);
+			this.ClientSize = new System.Drawing.Size(624, 601);
+			this.Controls.Add(this.btnTest);
+			this.Controls.Add(this.btnStats);
 			this.Controls.Add(this.nudTags);
 			this.Controls.Add(this.label3);
 			this.Controls.Add(this.txtCycles);
@@ -146,6 +170,8 @@
 		private System.Windows.Forms.TextBox txtCycles;
 		private System.Windows.Forms.NumericUpDown nudTags;
 		private System.Windows.Forms.Label label3;
+		private System.Windows.Forms.Button btnStats;
+		private System.Windows.Forms.Button btnTest;
 	}
 }
 
