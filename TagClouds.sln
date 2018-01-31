@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TagClouds", "TagClouds\TagClouds.csproj", "{2595F47D-83E5-4C4A-815D-7019F1922A0D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo", "Demo\Demo.csproj", "{CE72552A-808B-4D71-8B36-51EF86689435}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2595F47D-83E5-4C4A-815D-7019F1922A0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2595F47D-83E5-4C4A-815D-7019F1922A0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2595F47D-83E5-4C4A-815D-7019F1922A0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2595F47D-83E5-4C4A-815D-7019F1922A0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE72552A-808B-4D71-8B36-51EF86689435}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE72552A-808B-4D71-8B36-51EF86689435}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE72552A-808B-4D71-8B36-51EF86689435}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE72552A-808B-4D71-8B36-51EF86689435}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {917D88E8-C87F-48EE-817A-41AFDB44DDC4}
+	EndGlobalSection
+EndGlobal
