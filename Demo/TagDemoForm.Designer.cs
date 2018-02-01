@@ -25,7 +25,6 @@
 		private void InitializeComponent() {
 			this.label1 = new System.Windows.Forms.Label();
 			this.nudVariation = new System.Windows.Forms.NumericUpDown();
-			this.canvas = new System.Windows.Forms.Panel();
 			this.label2 = new System.Windows.Forms.Label();
 			this.txtCycles = new System.Windows.Forms.TextBox();
 			this.nudTags = new System.Windows.Forms.NumericUpDown();
@@ -33,8 +32,9 @@
 			this.btnStats = new System.Windows.Forms.Button();
 			this.btnTest = new System.Windows.Forms.Button();
 			this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-			this.lblHit = new System.Windows.Forms.ToolStripStatusLabel();
 			this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+			this.lblHit = new System.Windows.Forms.ToolStripStatusLabel();
+			this.canvas = new Demo.TagCloudControl();
 			((System.ComponentModel.ISupportInitialize)(this.nudVariation)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.nudTags)).BeginInit();
 			this.statusStrip1.SuspendLayout();
@@ -67,16 +67,6 @@
             0,
             65536});
 			this.nudVariation.ValueChanged += new System.EventHandler(this.nudVariation_ValueChanged);
-			// 
-			// canvas
-			// 
-			this.canvas.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-			this.canvas.Location = new System.Drawing.Point(15, 38);
-			this.canvas.Name = "canvas";
-			this.canvas.Size = new System.Drawing.Size(597, 527);
-			this.canvas.TabIndex = 2;
 			// 
 			// label2
 			// 
@@ -153,23 +143,37 @@
 			this.statusStrip1.TabIndex = 9;
 			this.statusStrip1.Text = "statusStrip1";
 			// 
-			// lblHit
-			// 
-			this.lblHit.Name = "lblHit";
-			this.lblHit.Size = new System.Drawing.Size(42, 17);
-			this.lblHit.Text = "(none)";
-			// 
 			// toolStripStatusLabel1
 			// 
 			this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
 			this.toolStripStatusLabel1.Size = new System.Drawing.Size(50, 17);
 			this.toolStripStatusLabel1.Text = "Hit Test:";
 			// 
+			// lblHit
+			// 
+			this.lblHit.Name = "lblHit";
+			this.lblHit.Size = new System.Drawing.Size(42, 17);
+			this.lblHit.Text = "(none)";
+			// 
+			// canvas
+			// 
+			this.canvas.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.canvas.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.canvas.IsDeterministic = true;
+			this.canvas.Location = new System.Drawing.Point(12, 38);
+			this.canvas.Name = "canvas";
+			this.canvas.Padding = new System.Windows.Forms.Padding(20);
+			this.canvas.Size = new System.Drawing.Size(600, 529);
+			this.canvas.TabIndex = 10;
+			// 
 			// TagDemoForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(624, 601);
+			this.Controls.Add(this.canvas);
 			this.Controls.Add(this.statusStrip1);
 			this.Controls.Add(this.btnTest);
 			this.Controls.Add(this.btnStats);
@@ -177,9 +181,9 @@
 			this.Controls.Add(this.label3);
 			this.Controls.Add(this.txtCycles);
 			this.Controls.Add(this.label2);
-			this.Controls.Add(this.canvas);
 			this.Controls.Add(this.nudVariation);
 			this.Controls.Add(this.label1);
+			this.MinimumSize = new System.Drawing.Size(640, 100);
 			this.Name = "TagDemoForm";
 			this.Text = "Tag Cloud Demo";
 			((System.ComponentModel.ISupportInitialize)(this.nudVariation)).EndInit();
@@ -195,7 +199,6 @@
 
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.NumericUpDown nudVariation;
-		private System.Windows.Forms.Panel canvas;
 		private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.TextBox txtCycles;
 		private System.Windows.Forms.NumericUpDown nudTags;
@@ -205,6 +208,7 @@
 		private System.Windows.Forms.StatusStrip statusStrip1;
 		private System.Windows.Forms.ToolStripStatusLabel lblHit;
 		private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
+		private TagCloudControl canvas;
 	}
 }
 

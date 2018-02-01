@@ -125,6 +125,11 @@ namespace TagClouds {
 		/// </summary>
 		[Browsable(false)]
 		public int CycleCount { get; private set; }
+		/// <summary>
+		/// Gets or sets a value indicating whether the layout behaviour is random or deterministic.
+		/// </summary>
+		[DefaultValue(false)]
+		public bool IsDeterministic { get; set; }
 
 		/// <summary>
 		/// Initialises a new instance of the <see cref="TagCloud"/> class using default values.
@@ -144,7 +149,7 @@ namespace TagClouds {
 		/// </summary>
 		public void Arrange() {
 			RectangleF totalBounds = RectangleF.Empty;
-			Random rnd = new Random();
+			Random rnd = IsDeterministic ? new Random(0) : new Random();
 
 			_renderItems.Clear();
 			CycleCount = 0;
