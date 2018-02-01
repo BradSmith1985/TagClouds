@@ -3,8 +3,7 @@ Acid Green
 Aero
 Aero Blue
 African Violet
-Air Force Blue (RAF)
-Air Force Blue (USAF)
+Air Force Blue
 Air Superiority Blue
 Alabama Crimson
 Alice Blue
@@ -19,7 +18,6 @@ Amaranth Purple
 Amaranth Red
 Amazon
 Amber
-Amber (SAE/ECE)
 American Rose
 Amethyst
 Android Green
@@ -29,7 +27,7 @@ Antique Bronze
 Antique Fuchsia
 Antique Ruby
 Antique White
-Ao (English)
+Ao
 Apple Green
 Apricot
 Aqua
@@ -48,7 +46,6 @@ AuroMetalSaurus
 Avocado
 Aztec Gold
 Azure
-Azure (Web Color)
 Azure Mist
 Azureish White
 Baby Blue
@@ -90,12 +87,6 @@ Bleu De France
 Blizzard Blue
 Blond
 Blue
-Blue (Crayola)
-Blue (Munsell)
-Blue (NCS)
-Blue (Pantone)
-Blue (Pigment)
-Blue (RYB)
 Blue Bell
 Blue-Gray
 Blue-Green
@@ -127,7 +118,7 @@ Bright Navy Blue
 Bright Pink
 Bright Turquoise
 Bright Ube
-Bright Yellow (Crayola)
+Bright Yellow
 Brilliant Azure
 Brilliant Lavender
 Brilliant Rose
@@ -135,8 +126,7 @@ Brink Pink
 British Racing Green
 Bronze
 Bronze Yellow
-Brown (Traditional)
-Brown (Web)
+Brown
 Brown-Nose
 Brown Sugar
 Brown Yellow
@@ -176,7 +166,6 @@ Caput Mortuum
 Cardinal
 Caribbean Green
 Carmine
-Carmine (M&P)
 Carmine Pink
 Carmine Red
 Carnation Pink
@@ -205,8 +194,7 @@ Champagne
 Charcoal
 Charleston Green
 Charm Pink
-Chartreuse (Traditional)
-Chartreuse (Web)
+Chartreuse
 Cherry
 Cherry Blossom Pink
 Chestnut
@@ -215,12 +203,11 @@ China Rose
 Chinese Red
 Chinese Violet
 Chlorophyll Green
-Chocolate (Traditional)
-Chocolate (Web)
+Chocolate
 Chrome Yellow
 Cinereous
 Cinnabar
-Cinnamon[Citation Needed]
+Cinnamon
 Cinnamon Satin
 Citrine
 Citron
@@ -235,7 +222,6 @@ Congo Pink
 Cool Black
 Cool Grey
 Copper
-Copper (Crayola)
 Copper Penny
 Copper Red
 Copper Rose
@@ -262,7 +248,6 @@ Cyan Azure
 Cyan-Blue Azure
 Cyan Cobalt Blue
 Cyan Cornflower Blue
-Cyan (Process)
 Cyber Grape
 Cyber Yellow
 Cyclamen
@@ -280,18 +265,15 @@ Dark Coral
 Dark Cyan
 Dark Electric Blue
 Dark Goldenrod
-Dark Gray (X11)
+Dark Gray
 Dark Green
-Dark Green (X11)
 Dark Gunmetal
-Dark Imperial Blue
 Dark Imperial Blue
 Dark Jungle Green
 Dark Khaki
 Dark Lava
 Dark Lavender
 Dark Liver
-Dark Liver (Horses)
 Dark Magenta
 Dark Medium Gray
 Dark Midnight Blue
@@ -430,8 +412,7 @@ Fluorescent Orange
 Fluorescent Pink
 Fluorescent Yellow
 Folly
-Forest Green (Traditional)
-Forest Green (Web)
+Forest Green
 French Beige
 French Bistre
 French Blue
@@ -450,7 +431,6 @@ French Wine
 Fresh Air
 Frostbite
 Fuchsia
-Fuchsia (Crayola)
 Fuchsia Pink
 Fuchsia Purple
 Fuchsia Rose
@@ -458,7 +438,7 @@ Fulvous
 Fuzzy Wuzzy
 Gainsboro
 Gamboge
-Gamboge Orange (Brown)
+Gamboge Orange
 Gargoyle Gas
 Generic Viridian
 Ghost White
@@ -469,8 +449,7 @@ Glaucous
 Glitter
 Glossy Grape
 GO Green
-Gold (Metallic)
-Gold (Web) (Golden)
+Gold
 Gold Fusion
 Golden Brown
 Golden Poppy
@@ -480,18 +459,9 @@ Granite Gray
 Granny Smith Apple
 Grape
 Gray
-Gray (HTML/CSS Gray)
-Gray (X11 Gray)
 Gray-Asparagus
 Gray-Blue
-Green (Color Wheel) (X11 Green)
-Green (Crayola)
-Green (HTML/CSS Color)
-Green (Munsell)
-Green (NCS)
-Green (Pantone)
-Green (Pigment)
-Green (RYB)
+Green
 Green-Blue
 Green-Cyan
 Green Lizard
@@ -535,11 +505,8 @@ Indian Red
 Indian Yellow
 Indigo
 Indigo Dye
-Indigo (Web)
 International Klein Blue
-International Orange (Aerospace)
-International Orange (Engineering)
-International Orange (Golden Gate Bridge)
+International Orange
 Iris
 Irresistible
 Isabelline
@@ -563,8 +530,7 @@ Kelly Green
 Kenyan Copper
 Keppel
 Key Lime
-Khaki (HTML/CSS) (Khaki)
-Khaki (X11) (Light Khaki)
+Khaki
 Kobe
 Kobi
 Kobicha
@@ -576,8 +542,7 @@ Lapis Lazuli
 Laser Lemon
 Laurel Green
 Lava
-Lavender (Floral)
-Lavender (Web)
+Lavender
 Lavender Blue
 Lavender Blush
 Lavender Gray
@@ -634,8 +599,7 @@ Light Thulian Pink
 Light Yellow
 Lilac
 Lilac Luster
-Lime (Color Wheel)
-Lime (Web) (X11 Green)
+Lime
 Lime Green
 Limerick
 Lincoln Green
@@ -644,18 +608,12 @@ Lion
 Liseran Purple
 Little Boy Blue
 Liver
-Liver (Dogs)
-Liver (Organ)
 Liver Chestnut
 Livid
 Lumber
 Lust
 Macaroni And Cheese
 Magenta
-Magenta (Crayola)
-Magenta (Dye)
-Magenta (Pantone)
-Magenta (Process)
 Magenta Haze
 Magenta-Pink
 Magic Mint
@@ -671,9 +629,7 @@ Mango Tango
 Mantis
 Mardi Gras
 Marigold
-Maroon (Crayola)
-Maroon (HTML/CSS)
-Maroon (X11)
+Maroon
 Mauve
 Mauve Taupe
 Mauvelous
@@ -714,7 +670,7 @@ Metal Pink
 Mexican Pink
 Midnight
 Midnight Blue
-Midnight Green (Eagle Green)
+Midnight Green
 Mikado Yellow
 Mindaro
 Ming
@@ -770,16 +726,12 @@ Old Moss Green
 Old Rose
 Old Silver
 Olive
-Olive Drab (#3)
+Olive Drab
 Olive Drab #7
 Olivine
 Onyx
 Opera Mauve
-Orange (Color Wheel)
-Orange (Crayola)
-Orange (Pantone)
-Orange (RYB)
-Orange (Web)
+Orange
 Orange Peel
 Orange-Red
 Orange Soda
@@ -840,7 +792,6 @@ Pastel Yellow
 Patriarch
 Payne's Grey
 Peach
-Peach
 Peach-Orange
 Peach Puff
 Peach-Yellow
@@ -871,7 +822,6 @@ Piggy Pink
 Pine Green
 Pineapple
 Pink
-Pink (Pantone)
 Pink Flamingo
 Pink Lace
 Pink Lavender
@@ -883,7 +833,6 @@ Pistachio
 Pixie Powder
 Platinum
 Plum
-Plum (Web)
 Plump Purple
 Polished Pine
 Pomp And Power
@@ -897,12 +846,10 @@ Prussian Blue
 Psychedelic Purple
 Puce
 Puce Red
-Pullman Brown (UPS Brown)
+Pullman Brown
 Pullman Green
 Pumpkin
-Purple (HTML)
-Purple (Munsell)
-Purple (X11)
+Purple
 Purple Heart
 Purple Mountain Majesty
 Purple Navy
@@ -930,12 +877,6 @@ Razzmatazz
 Razzmic Berry
 Rebecca Purple
 Red
-Red (Crayola)
-Red (Munsell)
-Red (NCS)
-Red (Pantone)
-Red (Pigment)
-Red (RYB)
 Red-Brown
 Red Devil
 Red-Orange
@@ -948,8 +889,6 @@ Registration Black
 Resolution Blue
 Rhythm
 Rich Black
-Rich Black (FOGRA29)
-Rich Black (FOGRA39)
 Rich Brilliant Lavender
 Rich Carmine
 Rich Electric Blue
@@ -977,7 +916,6 @@ Rosso Corsa
 Rosy Brown
 Royal Azure
 Royal Blue
-Royal Blue
 Royal Fuchsia
 Royal Purple
 Royal Yellow
@@ -997,7 +935,6 @@ Rusty Red
 Sacramento State Green
 Saddle Brown
 Safety Orange
-Safety Orange (Blaze Orange)
 Safety Yellow
 Saffron
 Sage
@@ -1015,7 +952,6 @@ Sapphire
 Sapphire Blue
 Sasquatch Socks
 Satin Sheen Gold
-Scarlet
 Scarlet
 Schauss Pink
 School Bus Yellow
@@ -1035,7 +971,6 @@ Sheen Green
 Shimmering Blush
 Shiny Shamrock
 Shocking Pink
-Shocking Pink (Crayola)
 Sienna
 Silver
 Silver Chalice
@@ -1050,7 +985,7 @@ Sky Blue
 Sky Magenta
 Slate Blue
 Slate Gray
-Smalt (Dark Powder Blue)
+Smalt
 Slimy Green
 Smashed Pumpkin
 Smitten
@@ -1108,7 +1043,6 @@ Tart Orange
 Taupe
 Taupe Gray
 Tea Green
-Tea Rose
 Tea Rose
 Teal
 Teal Blue
@@ -1178,7 +1112,6 @@ Vegas Gold
 Venetian Red
 Verdigris
 Vermilion
-Vermilion
 Veronica
 Very Light Azure
 Very Light Blue
@@ -1187,9 +1120,6 @@ Very Light Tangelo
 Very Pale Orange
 Very Pale Yellow
 Violet
-Violet (Color Wheel)
-Violet (RYB)
-Violet (Web)
 Violet-Blue
 Violet-Red
 Viridian
@@ -1242,12 +1172,6 @@ Xanadu
 Yale Blue
 Yankees Blue
 Yellow
-Yellow (Crayola)
-Yellow (Munsell)
-Yellow (NCS)
-Yellow (Pantone)
-Yellow (Process)
-Yellow (RYB)
 Yellow-Green
 Yellow Orange
 Yellow Rose

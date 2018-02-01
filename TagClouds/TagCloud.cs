@@ -11,6 +11,9 @@ using System.ComponentModel;
 
 namespace TagClouds {
 
+	/// <summary>
+	/// Represents a tag cloud and the logic required to perform layout and rendering.
+	/// </summary>
 	public class TagCloud : Component {
 
 		/// <summary>
@@ -284,6 +287,41 @@ namespace TagClouds {
 			}
 
 			g.ResetTransform();
+		}
+
+		/// <summary>
+		/// Renders the tag cloud onto the specified <see cref="Image"/>.
+		/// </summary>
+		/// <param name="image"></param>
+		public void DrawToBitmap(Image image) {
+			using (Graphics g = Graphics.FromImage(image)) {
+				Draw(g, new Rectangle(Point.Empty, image.Size));
+			}
+		}
+
+		/// <summary>
+		/// Returns the tag at a particular location when the tag cloud is drawn within the specified bounds.
+		/// </summary>
+		/// <param name="location"></param>
+		/// <param name="bounds"></param>
+		/// <returns></returns>
+		public TagItem HitTest(Point location, Rectangle bounds) {
+			RectangleF actual = CalcActualBounds(bounds, Bounds);
+			float scale = (Bounds.Width != 0) ? (actual.Width / Bounds.Width) : 1f;
+			if (scale <= 0) return null;
+
+			foreach (TagRenderInfo info in _renderItems) {
+				RectangleF tagBounds = info.Bounds;
+
+				tagBounds.X = actual.X + scale * (tagBounds.X - Bounds.X);
+				tagBounds.Y = actual.Y + scale * (tagBounds.Y - Bounds.Y);
+				tagBounds.Width = tagBounds.Width * scale;
+				tagBounds.Height = tagBounds.Height * scale;
+
+				if (tagBounds.Contains(location)) return info.Item;
+			}
+
+			return null;
 		}
 	}
 }

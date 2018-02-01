@@ -26,5 +26,9 @@ namespace TagClouds {
 
 			return new PointF((float)(origin.X + x), (float)(origin.Y - y));
 		}
+
+		public static Rectangle ToRectangle(this RectangleF rect) {
+			return new Rectangle((int)rect.X, (int)rect.Y, (int)rect.Width, (int)rect.Height);
+		}
 	}
 }

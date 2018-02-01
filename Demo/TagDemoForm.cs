@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing.Imaging;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -31,8 +32,17 @@ namespace Demo {
 
 			DoubleBuffered = true;
 			canvas.Paint += Canvas_Paint;
+			canvas.MouseMove += Canvas_MouseMove;
 
 			InitTags();
+		}
+
+		private void Canvas_MouseMove(object sender, MouseEventArgs e) {
+			Rectangle bounds = canvas.ClientRectangle;
+			bounds.Inflate(-20, -20);
+
+			TagItem hit = tagCloud.HitTest(e.Location, bounds);
+			lblHit.Text = (hit != null) ? hit.Text : "(none)";
 		}
 
 		private void InitTags() {
@@ -111,7 +121,7 @@ namespace Demo {
 		private async void btnTest_Click(object sender, EventArgs e) {
 			// reset stats
 			stats.Remove(0, stats.Length);
-			for (int i = 256; i >= 1; i--) {
+			for (int i = 512; i >= 1; i--) {
 				await Task.Delay(10);
 				nudTags.Value = i;
 			}
