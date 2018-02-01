@@ -3,6 +3,9 @@ A library for creating, arranging and rendering tag clouds.
 
 Related article: https://www.brad-smith.info/blog/archives/931
 
+## Requirements
+- .NET Framework 4.6.1 (recompile to support earlier versions)
+
 ## Example Usage
 ```csharp
 TagCloud cloud = new TagCloud();
